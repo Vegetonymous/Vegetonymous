@@ -1,4 +1,6 @@
 ## Hi there 👋
+- Currently learning Github and how it works
+- You can suggest something cool for me to try and learn
 
 <!--
 **Vegetonymous/Vegetonymous** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
