@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Prashant Mishra | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,45 +12,70 @@
 <body>
 
     <section class="hero">
-        <div class="hero-content" data-aos="fade-up">
+        <div class="hero-content" data-aos="zoom-out">
             <h1>Hi, I'm <span class="highlight">Prashant Mishra</span></h1>
-            <p>M.C.A Student | DevOps Enthusiast | Full Stack Developer</p>
+            <h3>System Analyst & IT Professional</h3>
+            <p>Dedicated IT professional skilled in server maintenance, database management, and AWS cloud migration. Currently pursuing M.C.A. at Mumbai University.</p>
             <div class="social-links">
-                <a href="https://github.com/Vegetonymous"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/prashantmishra007?utm_source=share&utm"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Vegetonymous" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prashantmishra007" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:prashant.mishra2929@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
-        <h2 data-aos="fade-right">My Tech Stack</h2>
-        <div class="skills-container">
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fab fa-react"></i>
-                <h3>Frontend</h3>
-                <p>React, HTML5, CSS3</p>
+    <section class="container" id="skills">
+        <h2 data-aos="fade-up">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-code"></i>
+                <h4>Languages</h4>
+                <p>Python, Java, C++, SQL</p>
             </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-server"></i>
-                <h3>Backend</h3>
-                <p>Node.js, Express, MongoDB</p>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fas fa-cloud"></i>
+                <h4>Cloud & DevOps</h4>
+                <p>AWS Migration, CI/CD, Azure Intunes</p>
             </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fab fa-docker"></i>
-                <h3>DevOps</h3>
-                <p>Docker, Git, CI/CD</p>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                <i class="fas fa-tools"></i>
+                <h4>IT Admin</h4>
+                <p>JamF, Veyon Master, Server Config</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 data-aos="fade-up">Professional Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <span>2025 - Present</span>
+                <h4>System Analyst | Oberoi International School</h4>
+                <p>Migrated applications to AWS Cloud and implemented HRMS (Spine HR) for 1,300+ users.</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <span>2022 - 2025</span>
+                <h4>IT Admin | Don Bosco International School</h4>
+                <p>Managed IT assets using Azure Intunes and JamF for iPad/MacBook lifecycle management.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <h4>Online Study Material Platform</h4>
+                <p>ASP.NET-based platform featuring video tutorials and PDFs using SQL Server.</p>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <h4>Disney Land Website</h4>
+                <p>Interactive HTML/CSS website showcasing theme parks and resorts.</p>
             </div>
         </div>
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
-
 </html>
-
-
-
-
