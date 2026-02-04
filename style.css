@@ -1,147 +1,124 @@
 :root {
     --neon-blue: #00d2ff;
     --neon-purple: #9d50bb;
-    --dark-bg: #050505;
+    --dark-bg: #030303;
     --glass: rgba(255, 255, 255, 0.03);
 }
+
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark-bg);
-    color: #e0e0e0;
-    text-align: center; /* Centers all inline/text elements */
+    color: #ffffff;
+    text-align: center; /* Centralize all text */
     overflow-x: hidden;
 }
 
 #particles-js {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: -1;
 }
 
-/* Scifi Header */
-.system-header {
+/* Centralized Containers */
+.container {
+    padding: 60px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 5%;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--neon-blue);
+    flex-direction: column;
+    align-items: center;
 }
 
-.online { color: #39ff14; text-shadow: 0 0 10px #39ff14; }
-
-/* Hero Section */
+/* Responsive Hero */
 .hero {
-    height: 85vh;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 h1.glitch {
     font-family: 'Orbitron', sans-serif;
-    font-size: clamp(2rem, 8vw, 5rem);
-    color: white;
-    text-shadow: 0 0 20px var(--neon-blue);
-    margin: 0;
+    font-size: clamp(2rem, 10vw, 4.5rem); /* Responsive font size */
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px var(--neon-blue);
 }
 
 .typing-container {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 4vw, 1.4rem);
     color: var(--neon-purple);
-    margin: 15px 0;
+    min-height: 1.6em;
 }
 
-/* Centered Layouts */
-.container {
-    padding: 60px 10%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-family: 'Orbitron', sans-serif;
-    color: var(--neon-blue);
-    margin-bottom: 50px;
-    display: block;
-    width: 100%;
-}
-
-/* Timeline & Cards */
-.timeline-centered {
+/* Centered Grid & Cards */
+.centered-stack, .grid-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-}
-
-.timeline-card, .skill-card {
-    background: var(--glass);
-    border: 1px solid rgba(0, 210, 255, 0.1);
-    padding: 40px;
-    border-radius: 10px;
-    max-width: 600px;
+    gap: 20px;
     width: 100%;
-    transition: 0.3s;
 }
 
-.timeline-card:hover, .skill-card:hover {
+@media (min-width: 768px) {
+    .grid-layout {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.glass-card, .skill-card {
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    transition: 0.3s ease-in-out;
+}
+
+.glass-card:hover, .skill-card:hover {
     border-color: var(--neon-blue);
-    box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.2);
     transform: translateY(-5px);
 }
-
-.date-tag {
-    color: var(--neon-purple);
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.9rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.skill-card {
-    flex: 1 1 300px;
-    max-width: 400px;
-}
-
-/* Icons */
-i {
-    font-size: 2.5rem;
-    color: var(--neon-blue);
-    margin-bottom: 20px;
-}
-
-.social-links { margin-top: 30px; }
-.social-links a { color: white; font-size: 1.8rem; margin: 0 15px; transition: 0.3s; }
-.social-links a:hover { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
 
 /* Neon Button */
 .btn-neon {
     display: inline-block;
-    padding: 15px 35px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    border: 2px solid var(--neon-blue);
     color: var(--neon-blue);
     text-decoration: none;
-    border: 2px solid var(--neon-blue);
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
     transition: 0.5s;
-    margin-top: 20px;
 }
 
 .btn-neon:hover {
     background: var(--neon-blue);
-    color: black;
+    color: #000;
     box-shadow: 0 0 30px var(--neon-blue);
+}
+
+/* Social Icons */
+.social-links { margin-top: 30px; }
+.social-links a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
 }
