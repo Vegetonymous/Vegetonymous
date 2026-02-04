@@ -3,79 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prashant Mishra | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Prashant Mishra | System Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+
+    <header class="system-header">
+        <div class="status">SYSTEM: <span class="online">ONLINE</span></div>
+        <div class="location">MUMBAI, IN</div>
+    </header>
 
     <section class="hero">
-        <div class="hero-content" data-aos="zoom-out">
-            <h1>Hi, I'm <span class="highlight">Prashant Mishra</span></h1>
-            <h3>System Analyst & IT Professional</h3>
-            <p>Dedicated IT professional skilled in server maintenance, database management, and AWS cloud migration. Currently pursuing M.C.A. at Mumbai University.</p>
+        <div class="hero-content" data-aos="zoom-in">
+            <h1 class="glitch" data-text="PRASHANT MISHRA">PRASHANT MISHRA</h1>
+            <div class="typing-container">
+                <span id="typed"></span>
+            </div>
+            
+            <div class="hero-btns">
+                <a href="Prashant_Mishra.pdf" class="btn-neon" download>
+                    <span class="btn-text">INITIALIZE DOWNLOAD</span>
+                    <span class="btn-blur"></span>
+                </a>
+            </div>
+
             <div class="social-links">
                 <a href="https://github.com/Vegetonymous" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/prashantmishra007" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:prashant.mishra2929@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="container" id="skills">
-        <h2 data-aos="fade-up">Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fas fa-code"></i>
-                <h4>Languages</h4>
-                <p>Python, Java, C++, SQL</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                <i class="fas fa-cloud"></i>
-                <h4>Cloud & DevOps</h4>
-                <p>AWS Migration, CI/CD, Azure Intunes</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                <i class="fas fa-tools"></i>
-                <h4>IT Admin</h4>
-                <p>JamF, Veyon Master, Server Config</p>
             </div>
         </div>
     </section>
 
     <section class="container">
-        <h2 data-aos="fade-up">Professional Journey</h2>
+        <h2 class="section-title" data-aos="fade-up">// MISSION LOG</h2>
         <div class="timeline">
             <div class="timeline-item" data-aos="fade-right">
-                <span>2025 - Present</span>
-                <h4>System Analyst | Oberoi International School</h4>
-                <p>Migrated applications to AWS Cloud and implemented HRMS (Spine HR) for 1,300+ users.</p>
+                <div class="time-marker">2025 - PRES</div>
+                <h4>SYSTEM ANALYST | OBEROI INT. SCHOOL</h4>
+                <p>Leading AWS Cloud migrations and HRMS deployment for 1,300+ users.</p>
             </div>
             <div class="timeline-item" data-aos="fade-left">
-                <span>2022 - 2025</span>
-                <h4>IT Admin | Don Bosco International School</h4>
-                <p>Managed IT assets using Azure Intunes and JamF for iPad/MacBook lifecycle management.</p>
+                <div class="time-marker">2022 - 2025</div>
+                <h4>IT ADMIN | DON BOSCO</h4>
+                <p>Managed 1,000+ assets via Azure Intunes and JamF[cite: 26, 28, 29].</p>
             </div>
         </div>
     </section>
 
     <section class="container">
-        <h2 data-aos="fade-up">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card" data-aos="zoom-in">
-                <h4>Online Study Material Platform</h4>
-                <p>ASP.NET-based platform featuring video tutorials and PDFs using SQL Server.</p>
+        <h2 class="section-title" data-aos="fade-up">// TECH CAPABILITIES</h2>
+        <div class="skills-grid">
+            <div class="skill-card neon-border" data-aos="flip-up">
+                <i class="fas fa-terminal"></i>
+                <h3>DevOps</h3>
+                <p>CI/CD, AWS, Azure, Linux [cite: 12, 48, 52]</p>
             </div>
-            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                <h4>Disney Land Website</h4>
-                <p>Interactive HTML/CSS website showcasing theme parks and resorts.</p>
+            <div class="skill-card neon-border" data-aos="flip-up" data-aos-delay="100">
+                <i class="fas fa-database"></i>
+                <h3>Backend</h3>
+                <p>Python, Java, SQL Server [cite: 48, 49, 56]</p>
             </div>
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+
+        // Initialize Typed.js
+        new Typed('#typed', {
+            strings: ['SYSTEM ANALYST', 'MCA STUDENT', 'AWS SPECIALIST', 'FULL STACK DEVELOPER'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        // Initialize Particles.js (Minimalist Starfield)
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 80 },
+                "color": { "value": "#00d2ff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5 },
+                "size": { "value": 3 },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00d2ff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2 }
+            }
+        });
+    </script>
 </body>
 </html>
